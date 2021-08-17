@@ -1,23 +1,11 @@
 {
-  "key": "confluence-connect-test-ap-methods",
-  "name": "Confluence Connect Test - AP methods",
-  "description": "This Connect Addon is used to test AP methods from ACJS",
-  "vendor": {
-    "name": "Confluence Frontend - Ecosystem",
-    "url": "https://hello.atlassian.net/wiki/spaces/CCECO/overview"
-  },
-  "baseUrl": "{{localBaseUrl}}",
-  "links": {
-    "self": "{{localBaseUrl}}/atlassian-connect.json",
-    "homepage": "{{localBaseUrl}}/atlassian-connect.json"
-  },
+  "key": "confluence-connect-test-simple-text",
+  "name": "Confluence Connect Test - simple text",
+  "description": "This Connect Addon is used to test simple text",
+  "baseUrl": "https://jasonh42.github.io",
   "authentication": {
-    "type": "jwt"
+    "type": "none"
   },
-  "lifecycle": {
-    "installed": "/installed"
-  },
-  "scopes": ["READ"],
   "modules": {
     "dynamicContentMacros": [
       {
@@ -34,8 +22,5 @@
         "key": "simple-text-macro"
       }
     ]
-  },
-  "apiMigrations": {
-    "gdpr": true
   }
 }
